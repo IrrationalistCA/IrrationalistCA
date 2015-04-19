@@ -1,0 +1,7 @@
+mixin author(authorName)
+  - var author = authors[authorName]
+  span.author
+    if author
+      =author.name
+    else
+      =authorName

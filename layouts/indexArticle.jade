@@ -1,0 +1,11 @@
+mixin indexArticle(article)
+	article.article
+		header
+			h2
+				a(href=article.path)= article.title
+			p.byline
+				span.author
+					+author(article.author)
+					|  &mdash;
+				span.date= moment.utc(article.date).format('MMMM D, YYYY')
+		section.content!= typogr(article.contents.toString()).typogrify()

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	include author
+	include indexArticle
+	- var i = 0
+	while i < 5
+		- var article = articles[i]
+		if article
+			+indexArticle(article)
+		- i++

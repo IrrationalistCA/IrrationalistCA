@@ -1,0 +1,17 @@
+{
+  "name": "the-irrationalist",
+  "devDependencies": {
+    "jade": "*",
+    "metalsmith": "*",
+    "metalsmith-collections": "*",
+    "metalsmith-layouts": "*",
+    "metalsmith-markdown": "*",
+    "metalsmith-placeholder": "*",
+    "metalsmith-path": "*",
+    "metalsmith-serve": "*",
+    "metalsmith-watch": "*",
+    "moment": "*",
+    "permalinks": "*",
+    "typogr": "*"
+  }
+}
