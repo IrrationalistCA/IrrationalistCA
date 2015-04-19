@@ -7,11 +7,11 @@
     "metalsmith-layouts": "*",
     "metalsmith-markdown": "*",
     "metalsmith-placeholder": "*",
+    "metalsmith-permalinks": "*",
     "metalsmith-path": "*",
     "metalsmith-serve": "*",
     "metalsmith-watch": "*",
     "moment": "*",
-    "permalinks": "*",
     "typogr": "*"
   },
   "scripts": {
