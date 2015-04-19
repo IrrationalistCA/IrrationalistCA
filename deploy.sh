@@ -10,7 +10,7 @@ default_username=jczerwinski
 default_email=jamie.czerwinski@gmail.com
 
 #repository to deploy to. must be readable and writable.
-repo=https://$GITHUB_TOKEN@github.com/IrrationalistCA/IrrationalistCA.git
+repo=https://$GITHUB_TOKEN@github.com/IrrationalistCA/IrrationalistCA.github.io.git
 
 # Parse arg flags
 while : ; do
