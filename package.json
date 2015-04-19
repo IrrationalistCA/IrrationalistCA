@@ -13,5 +13,11 @@
     "moment": "*",
     "permalinks": "*",
     "typogr": "*"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "predeploy": "npm run build",
+    "deploy": "./deploy.sh",
+    "test": "npm run deploy"
   }
 }

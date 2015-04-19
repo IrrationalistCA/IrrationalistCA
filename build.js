@@ -27,10 +27,10 @@ metalsmith(__dirname)
 	// 	relative: false
 	// }))
 	.use(path())
-	.use(function (files, smith, done) {
-		console.log(files)
-		done()
-	})
+	// .use(function (files, smith, done) {
+	// 	console.log(files)
+	// 	done()
+	// })
 	.use(layouts({ // Before articles, otherwise the whole article page, header/footer and all, gets injected to index.
 		engine: 'jade',
 		pattern: '{index.html, feed.xml, archive/index.html}'
@@ -40,8 +40,6 @@ metalsmith(__dirname)
 		pattern: 'articles/**/*.html',
 		default: 'article.jade'
 	}))
-	.use(serve())
-	.use(watch())
 	.build(function (err) {
 		if (err) throw err;
 	});
