@@ -19,7 +19,7 @@ You're now ready to get started! Your next steps depend on what you want to do.
 ### Write an Article
 1. Create a new folder in `content/articles'. The name of the folder should match the title of your article, but should only include numbers, lowercase letters, and dashes.
 2. Create a new Markdown file in the folder. It should have the same filename as the name of the folder you just created. eg. `content/articles/my-article/my-article.md`
-3. Start writing! Put any assets like images or scripts for your article in `content/assets` for now -- we'll set things up so we can put them in the same folder as the article soon.
+3. Start writing! Put any assets like images or scripts for your article in `content/assets` for now -- we'll set things up so we can put them in the same folder as the article soon. 
 
 ### Metadata
 #### title
