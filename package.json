@@ -17,7 +17,7 @@
   "scripts": {
     "build": "node build.js",
     "predeploy": "npm run build",
-    "deploy": "./deploy.sh",
+    "deploy": "./deploy.sh --verbose",
     "test": "npm run deploy"
   }
 }
