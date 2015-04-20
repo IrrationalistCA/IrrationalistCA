@@ -3,14 +3,14 @@
 set -o errexit #abort if any command fails
 
 deploy_directory=build
-deploy_branch=master
+deploy_branch=gh-pages
 
 #if no user identity is already set in the current git environment, use this:
 default_username=jczerwinski
 default_email=jamie.czerwinski@gmail.com
 
 #repository to deploy to. must be readable and writable.
-repo=https://$GITHUB_TOKEN@github.com/IrrationalistCA/IrrationalistCA.github.io.git
+repo=https://$GITHUB_TOKEN@github.com/IrrationalistCA/IrrationalistCA.git
 
 # Parse arg flags
 while : ; do
