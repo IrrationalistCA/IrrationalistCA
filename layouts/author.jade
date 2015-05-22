@@ -1,7 +1,15 @@
-mixin author(authorName)
-  - var author = authors[authorName]
-  span.author
-    if author
-      =author.name
-    else
-      =authorName
+mixin author(authorList)
+	if (typeof authorList !== 'string')
+		- var displayAuthors = [];
+		each author in authorList
+			if authors[author]
+				- displayAuthors.push(authors[author].name)
+			else
+				-displayAuthors.push(author)
+		- var displayAuthorString = displayAuthors.join(', ');
+	else
+		if authors[authorList]
+			- var displayAuthorString = authors[authorList].name
+		else
+			- var displayAuthorString = authorList
+	span.author= displayAuthorString

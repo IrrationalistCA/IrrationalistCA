@@ -26,22 +26,21 @@ block content
 	article.article
 		header
 			h2
-				a(href=global.url + path)= title
+				a(href="/" + path)= title
 			p.byline
 				span.author
-					+author(authors[author].name)
+					+author(author)
 					|  &mdash;
 				span.date= moment.utc(date).format('MMMM D, YYYY')
 		section.content!= typogr(contents).typogrify()
 		section.nav
 			if previous
-				| Previous
-				a(href=previous.path)= previous.title
-			|  &mdash;
+				a(href="/" + previous.path)= previous.title
+				|  &mdash;
 			a(href='/') Home
-			|  &mdash;
 			if next
-				a(href=global.url + next.path) Next
+				|  &mdash;
+				a(href="/" + next.path)= next.title
 		section.social
 			.buttons
 				fb-like(data-href=global.url + path, data-layout="standard", data-colorscheme="light", data-action="like", data-show-faces="true", data-share="true")
