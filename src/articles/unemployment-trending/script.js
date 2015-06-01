@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 120, bottom: 30, left: 50},
+var margin = {top: 20, right: 160, bottom: 30, left: 50},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -31,7 +31,7 @@ var svg = d3.select("div.gtrends-unemployment-chart").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("/articles/google-trends-canada-unemployment/newData.csv", function(error, data) {
+d3.csv("/articles/unemployment-trending/newData.csv", function(error, data) {
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
 
   data.forEach(function(d) {
