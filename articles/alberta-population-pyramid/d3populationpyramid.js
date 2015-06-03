@@ -50,9 +50,9 @@ function PeoplePyramid (data, elementID, unit) {
 		.nice(5);
 
 	var $container = $('#' + elementID);
-	var $chart = $container.append('<svg class="pop-pyramid" style="display: block"></svg>');
+	var $chart = $container.append('<svg style="display: block"></svg>');
 
-	this.chart = d3.select('svg.pop-pyramid')
+	this.chart = d3.select('svg')
 		.attr('width', this.width)
 		.attr('height', height);
 
