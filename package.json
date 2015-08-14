@@ -15,6 +15,9 @@
     "moment": "*",
     "typogr": "*"
   },
+  "engines": {
+    "node": ">=0.12"
+  },
   "scripts": {
     "build": "node build.js",
     "predeploy": "npm run build",
