@@ -65,7 +65,9 @@ d3.tsv("/articles/debating-a-winning-tune/leaders-voice-pitch-data.tsv", functio
    var kde = kernelDensityEstimator(epanechnikovKernel(75), x.ticks(100));
 
   for (var leader in data[0]) {
-    var leaderData = data.map(function(d) {
+    var leaderData = data.filter(function (d) {
+      return d !== undefined;
+    }).map(function(d) {
       return parseFloat(d[leader]);
     });
     var leaderDensity = kde(leaderData);
