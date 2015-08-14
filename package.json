@@ -19,7 +19,7 @@
     "node": ">=0.12"
   },
   "scripts": {
-    "build": "node build.js",
+    "build": "node --harmony build.js",
     "predeploy": "npm run build",
     "deploy": "./deploy.sh --verbose",
     "test": "npm run deploy"
