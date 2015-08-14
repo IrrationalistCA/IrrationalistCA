@@ -1,3 +1,4 @@
+(function () {
 var margin = {top: 20, right: 160, bottom: 30, left: 50},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -26,8 +27,8 @@ var line = d3.svg.line()
     .y(function(d) { return y(d.temperature); });
 
 var svg = d3.select("div.gtrends-unemployment-chart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("viewBox", "0 0 800 500")
+    .attr("width",  '100%')
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -86,3 +87,4 @@ d3.csv("/articles/unemployment-trending/newData.csv", function(error, data) {
       .attr("dy", ".35em")
       .text(function(d) { return d.name; });
 });
+})();

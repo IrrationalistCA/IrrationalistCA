@@ -1,7 +1,7 @@
 ---
 title: Alberta Population Pyramid
 author: jamie
-date: 2014-02-03 19:41
+date: 2014-02-03
 teaser: Crawling with hipsters.
 ---
 Alberta's population by age group, gender, and year.
@@ -9,14 +9,10 @@ Alberta's population by age group, gender, and year.
 
 <div class="oversize"><div id="PopulationPyramid"></div></div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.3.9/d3.js"></script>
-<script src="/articles/alberta-population-pyramid/alberta.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="/articles/alberta-population-pyramid/d3populationpyramid.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
-<script>
-	var pyramid = new PeoplePyramid(data, 'PopulationPyramid', 'K');
-</script>
 
 A couple of observations. First, from 1975 until recently, its been all about the Baby Boomers. They have really dominated demographically.
 

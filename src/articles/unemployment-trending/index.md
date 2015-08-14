@@ -2,6 +2,7 @@
 title: Unemployment Trending
 author: [april, jamie]
 date: 2015-06-01
+draft: true
 ---
 EI data lags real-time by two months, while LFS reporting is one month behind. They are both lagging indicators of unemployment. Can we do better?
 

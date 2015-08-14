@@ -25,39 +25,19 @@ body {
   font-weight: 400;
   font-smooth: always;
   color: #222222;
-  /*overflow-x: hidden;*/
   width: 100%;
 }
 
-
-@media  (max-width: 820px) {
-  .oversize>* {
-    display: none;
-  }
-  .oversize:before {
-    content: "Sorry, your viewport is too narrow to view this visualization. Try increasing the width of your window or rotating your device.";
-    display: block;
-    border: 1px dotted black;
-    padding: 1em;
-    background-color: #E5E5E5;
-    font-style: italic;
-    font-size: small;
-  }
-}
-
-@media(min-width: 821px) {
+@media(min-width: 918px) {
   .oversize {
     position: relative;
     left: 50%;
-    margin-left: -400px;
-    overflow: visible;
-    max-width: 800px;
+    margin-left: -450px;
+    overflow: hidden;
+    max-width: 900px;
   }
   .oversize>* {
     display: initial;
-  }
-  .oversize:before {
-    display: none;
   }
 }
 
@@ -188,7 +168,6 @@ footer section {
   text-align: left;
   display: inline-block;
   max-width: 400px;
-  min-width: 300px;
   padding: 2.2em 3em 0 0;
   vertical-align: top;
   margin-left: auto;
