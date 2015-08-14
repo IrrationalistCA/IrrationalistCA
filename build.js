@@ -7,12 +7,14 @@ var watch = require('metalsmith-watch');
 var placeholder = require('metalsmith-placeholder');
 var permalinks = require('metalsmith-permalinks');
 var path = require('metalsmith-path');
+var drafts= require('metalsmith-drafts');
 
 var metadata = require('./metadata.js');
 
 // Build posts
 metalsmith(__dirname)
 	.metadata(metadata)
+	.use(drafts())
 	.use(collections({
 		articles: {
 			pattern: 'articles/**/*.md',
