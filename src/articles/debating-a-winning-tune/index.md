@@ -11,7 +11,7 @@ A [new study](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0
 Here are (smoothed) probability density plots of each leaders voice pitch through the first twenty minutes of the [2015 Macleans National Leaders Debate](http://www.macleans.ca/national-leaders-debate/).
 
 <div class="oversize canada-leaders-debate-vis"></div>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.3.9/d3.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.9/d3.js"></script>
 <script src="/articles/debating-a-winning-tune/canada-leaders-debate-vis.js"></script>
 
 Judging by voice depth alone, Mulcair won. Also, notice the dispersion of the distributions. Elizabeth May seemed the most genuine, and it shows in her range of vocal expressiveness. Similarly, Mulcair seemed the most rehearsed, and it showed in his lack of range.
