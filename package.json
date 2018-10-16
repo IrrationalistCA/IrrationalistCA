@@ -15,8 +15,12 @@
     "moment": "*",
     "typogr": "*"
   },
+<<<<<<< Updated upstream
   "engines":
   {
+=======
+  "engines": {
+>>>>>>> Stashed changes
     "node": ">=0.12"
   },
   "scripts": {
@@ -24,5 +28,11 @@
     "predeploy": "npm run build",
     "deploy": "./deploy.sh --verbose",
     "test": "npm run deploy"
+<<<<<<< Updated upstream
+=======
+  },
+  "dependencies": {
+    "jstransformer-jade": "^0.1.2"
+>>>>>>> Stashed changes
   }
 }

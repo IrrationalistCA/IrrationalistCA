@@ -14,6 +14,8 @@ var metadata = require('./metadata.js');
 // Build posts
 metalsmith(__dirname)
 	.metadata(metadata)
+	.source('src')
+	.destination('docs')
 	.use(drafts())
 	.use(collections({
 		articles: {
@@ -25,25 +27,28 @@ metalsmith(__dirname)
 	.use(markdown())
 	.use(placeholder())
 	 // Must be after markdown, placeholder. Path seems to get clobbered otherwise.
-	// .use(permalinks({
-	// 	relative: false
-	// }))
+	.use(permalinks({
+		relative: false
+	}))
 	.use(path())
-	/*.use(function (files, smith, done) {
-		console.log(files)
-		done()
-	})*/
 	.use(layouts({ // Before articles, otherwise the whole article page, header/footer and all, gets injected to index.
-		engine: 'jade',
-		pattern: '{index.html, feed.xml, archive/index.html}'
+		pattern: '{index.html, feed.xml, archive/index.html}',
+		suppressNoFilesError: true
 	}))
 	.use(layouts({
-		engine: 'jade',
 		pattern: 'articles/**/*.html',
-		default: 'article.jade'
+		default: 'article.jade',
+		suppressNoFilesError: true
 	}))
-	.use(serve())
-	.use(watch())
+	.use(serve({port: 8181}))
+	.use(watch({
+		paths: {
+			'${source}/**/*': true,
+			'layouts/**/*': true,
+			'node_modules/**/*': true
+		},
+		livereload: true
+	}))
 	.build(function (err) {
 		if (err) throw err;
 	});

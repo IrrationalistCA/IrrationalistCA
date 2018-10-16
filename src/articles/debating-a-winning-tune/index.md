@@ -5,6 +5,7 @@ date: 2015-08-14
 teaser: Science says vocal pitch can predict debate performance. How do Canada's party leaders stack up?
 ---
 <link rel="stylesheet" href="/articles/debating-a-winning-tune/style.css">
+
 A [new study](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0133779) suggests that candidates with deep voices are more likely to win over voters in elections. How do Canada's current candidates stack up?
 
 Here are (smoothed) probability density plots of each leaders voice pitch through the first twenty minutes of the [2015 Macleans National Leaders Debate](http://www.macleans.ca/national-leaders-debate/).
